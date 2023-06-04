@@ -1,0 +1,55 @@
+AnchorPane{
+    -fx-background-image: url('java/jamb/science-dice-probabilities-empty-notebook.jpg');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}
+.rollButton {
+    -fx-text-fill: white;
+    -fx-color:black;
+    -fx-padding:4px;
+    -fx-background-color: #468ec7;
+    -fx-background-radius: 10px;
+}
+.rollButton:hover {
+    -fx-background-color: #3d7eb2;
+}
+
+.rollButtonDeactivated{
+    -fx-text-fill: black;
+    -fx-background-color: #ec0d0d;
+}
+
+.cellUpDown{
+    -fx-border-width: 1px;
+    -fx-border-color: #dad8d8;
+}
+.cellUpDown:hover{
+    -fx-background-color: rgba(229, 229, 229, 0.75);
+    -fx-cursor: hand;
+}
+
+.writeValueButton{
+    -fx-background-color: none;
+}
+
+.writeValueButton:hover{
+    -fx-background-color: lightgray;
+}
+
+.check-box .box {
+    -fx-background-color: white;
+    -fx-border-color: rgba(128, 128, 128, 0.71);
+    -fx-border-radius:5px;
+
+}
+.check-box .box:hover{
+    -fx-background-color: #f1f1f1;
+    -fx-cursor: hand;
+}
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+.check-box:selected .box {
+    -fx-background-color: #7bc9ff;
+    -fx-border-color: #7bc9ff;
+}

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" style="-fx-background-size: contain; -fx-background-repeat: no-repeat;" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tvz.java.jamb.YambController">
+   <children>
+      <Pane layoutX="109.0" layoutY="201.0" prefHeight="500.0" prefWidth="215.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+         <children>
+            <Button fx:id="rollButton" layoutX="33.0" layoutY="440.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onRollButtonClicked" prefHeight="50.0" prefWidth="150.0" text="Roll 🎲" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="dobiveniBroj1TextField" alignment="CENTER_RIGHT" editable="false" layoutX="10.0" layoutY="50.0" prefHeight="20.0" prefWidth="110.0" promptText="I broj">
+               <font>
+                  <Font name="Book Antiqua Bold" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dobiveniBroj2TextField" alignment="CENTER_RIGHT" editable="false" layoutX="10.0" layoutY="130.0" prefHeight="20.0" prefWidth="110.0" promptText="II broj">
+               <font>
+                  <Font name="Book Antiqua Bold" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dobiveniBroj3TextField" alignment="CENTER_RIGHT" editable="false" layoutX="10.0" layoutY="210.0" prefHeight="20.0" prefWidth="110.0" promptText="III broj">
+               <font>
+                  <Font name="Book Antiqua Bold" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dobiveniBroj4TextField" alignment="CENTER_RIGHT" editable="false" layoutX="10.0" layoutY="290.0" prefHeight="20.0" prefWidth="110.0" promptText="IV broj">
+               <font>
+                  <Font name="Book Antiqua Bold" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dobiveniBroj5TextField" alignment="CENTER_RIGHT" editable="false" layoutX="10.0" layoutY="370.0" prefHeight="20.0" prefWidth="110.0" promptText="V broj">
+               <font>
+                  <Font name="Book Antiqua Bold" size="24.0" />
+               </font>
+            </TextField>
+            <CheckBox fx:id="zakljucajBroj1CheckBox" layoutX="147.0" layoutY="59.0" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" textFill="#033610">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="zakljucajBroj2CheckBox" layoutX="148.0" layoutY="139.0" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" textFill="#033610">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="zakljucajBroj3CheckBox" layoutX="148.0" layoutY="219.0" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" textFill="#033610">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="zakljucajBroj4CheckBox" layoutX="148.0" layoutY="299.0" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" textFill="#033610">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="zakljucajBroj5CheckBox" layoutX="148.0" layoutY="378.0" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" textFill="#033610">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <Text fx:id="preostaliBrojBacanjaText" layoutX="14.0" layoutY="21.0" stroke="#a11111" strokeType="INSIDE" strokeWidth="0.0" text="Preostali broj bacanja: 3">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Text>
+            <Separator layoutY="430.0" prefWidth="215.0" />
+            <Separator layoutY="38.423828125" prefWidth="215.0" />
+         </children>
+      </Pane>
+      <GridPane fx:id="plocaGridPane" layoutX="439.0" layoutY="92.0" scaleX="0.9" scaleY="0.9" style="-fx-background-radius: 10;">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="180.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fill="#777777" lineSpacing="2.0" scaleX="3.0" scaleY="3.0" strokeLineCap="BUTT" strokeType="OUTSIDE" style="-fx-font-weight: bold;" text="⚀" textAlignment="CENTER" wrappingWidth="50.0" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text fill="#777777" lineSpacing="2.0" scaleX="3.0" scaleY="3.0" strokeLineCap="BUTT" strokeType="OUTSIDE" style="-fx-font-weight: bold;" text="⚁" textAlignment="CENTER" wrappingWidth="50.0" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text fill="#777777" lineSpacing="2.0" scaleX="3.0" scaleY="3.0" strokeLineCap="BUTT" strokeType="OUTSIDE" style="-fx-font-weight: bold;" text="⚂" textAlignment="CENTER" wrappingWidth="50.0" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text fill="#777777" lineSpacing="2.0" scaleX="3.0" scaleY="3.0" strokeLineCap="BUTT" strokeType="OUTSIDE" style="-fx-font-weight: bold;" text="⚃" textAlignment="CENTER" wrappingWidth="50.0" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text fill="#777777" lineSpacing="2.0" scaleX="3.0" scaleY="3.0" strokeLineCap="BUTT" strokeType="OUTSIDE" style="-fx-font-weight: bold;" text="⚄" textAlignment="CENTER" wrappingWidth="50.0" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text fill="#777777" lineSpacing="2.0" scaleX="3.0" scaleY="3.0" strokeLineCap="BUTT" strokeType="OUTSIDE" style="-fx-font-weight: bold;" text="⚅" textAlignment="CENTER" wrappingWidth="50.0" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text fill="#777777" strokeType="OUTSIDE" strokeWidth="0.0" text="Dva para" wrappingWidth="200.0" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Papyrus" size="28.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text fill="#777777" strokeType="OUTSIDE" strokeWidth="0.0" text="Full" wrappingWidth="200.0" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Papyrus" size="28.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text fill="#777777" strokeType="OUTSIDE" strokeWidth="0.0" text="Poker" wrappingWidth="200.0" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Papyrus" size="28.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text fill="#777777" strokeType="OUTSIDE" strokeWidth="0.0" text="Yamb" wrappingWidth="200.0" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Papyrus" size="28.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Button fx:id="writeDownButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#onWriteDownButtonClicked" prefHeight="60.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="writeValueButton" text="↓" GridPane.columnIndex="1">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="writeUpButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#onWriteUpButtonClicked" prefHeight="60.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="writeValueButton" text="↑" GridPane.columnIndex="2">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="writeUpDownButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#onWriteUpDownButtonClicked" prefHeight="60.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="writeValueButton" text="⇅" GridPane.columnIndex="3">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+            <Text fx:id="imePlayeraText" strokeType="OUTSIDE" strokeWidth="0.0" text="Player name" wrappingWidth="136.95155143737793">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Text>
+         </children>
+      </GridPane>
+      <MenuBar prefHeight="20.0" prefWidth="1400.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Game options">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onSaveGame" text="Save Game" />
+                  <MenuItem mnemonicParsing="false" onAction="#onLoadGame" text="Load Game" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Pomoć">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#onGenerateDocumentation" text="Generiraj dokumentaciju" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Text fx:id="igracCijiJeRed" fill="WHITE" layoutX="109.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Na redu je igrač: ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Pane layoutX="1070.0" layoutY="25.0" prefHeight="875.0" prefWidth="330.0" style="-fx-background-color: #ADD8E6;">
+         <children>
+            <TextArea fx:id="chatTextArea" editable="false" layoutX="15.0" layoutY="71.0" prefHeight="600.0" prefWidth="300.0" style="-fx-border-color: black;" wrapText="true" />
+            <Button layoutX="216.0" layoutY="740.0" mnemonicParsing="false" onAction="#sendChatMessage" prefHeight="12.0" prefWidth="100.0" styleClass="rollButton" text="Pošalji🖅">
+               <font>
+                  <Font name="Consolas" size="16.0" />
+               </font>
+            </Button>
+            <Text fill="#045e18" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pričaj s ostalim igračima">
+               <font>
+                  <Font name="Consolas" size="22.0" />
+               </font>
+            </Text>
+            <TextField fx:id="chatMessageTextField" layoutX="15.0" layoutY="692.0" prefHeight="40.0" prefWidth="300.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

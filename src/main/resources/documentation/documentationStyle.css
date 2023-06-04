@@ -1,0 +1,18 @@
+body{
+    background-color: #bfd7ec;
+    font-family: "Lucida Console", monospace;
+    margin: 0px;
+}
+
+.heading{
+    text-transform: uppercase;
+    background-color: #2d2d2d;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.className{
+    padding-left: 10px;
+}
